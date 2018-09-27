@@ -4,9 +4,14 @@ import { MoviesListComponent } from './components/movies-list/movies-list.compon
 import { MovieComponent } from './components/movie/movie.component';
 import { MoviesService } from './services/movies.service';
 import { MoviesRoutingModule } from './movies-routing.module';
+import { MyMaterialModule } from '../my-material/my-material.module';
 
 @NgModule({
-  imports: [CommonModule, MoviesRoutingModule],
+  imports: [
+    CommonModule,
+    MoviesRoutingModule,
+    MyMaterialModule
+  ],
   declarations: [MoviesListComponent, MovieComponent],
   providers: [MoviesService]
 })

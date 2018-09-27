@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { CharactersListComponent } from './components/characters-list/characters-list.component';
 import { CharacterComponent } from './components/character/character.component';
 import { PageNotFoundComponent } from './components/page-not-found.component';
+import { MyMaterialModule } from './modules/my-material/my-material.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PageNotFoundComponent } from './components/page-not-found.component';
   imports: [
     BrowserModule,
     MoviesModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MyMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
