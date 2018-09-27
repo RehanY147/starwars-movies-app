@@ -7,6 +7,13 @@
     <h3 mat-line>{{ character.name }}</h3>
     <p mat-line>Height: {{ character.height }}</p>
     <p mat-line>Gender: {{ character.gender }}</p>
+    <p mat-line ngSwitch="{{ character.eye_color }}"> Eye Color:
+      <span *ngSwitchCase="'blue'" [style.color]="'blue'">{{ character.eye_color }}</span>
+      <span *ngSwitchCase="'red'" [style.color]="'red'">{{ character.eye_color }}</span>
+      <span *ngSwitchCase="'yellow'" [style.color]="'yellow'" [style.background]="'black'">{{ character.eye_color }}</span>
+      <span *ngSwitchCase="'black'" [style.color]="'black'">{{ character.eye_color }}</span>
+      <span *ngSwitchDefault>unknown</span>
+    </p>
   </mat-list-item>
 </mat-list>
 
