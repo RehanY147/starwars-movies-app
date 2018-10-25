@@ -10,5 +10,12 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
+<form [formGroup]="trollForm" (ngSubmit)="createRant(trollForm.value)">
+  <h3>Trollbox</h3>
+  <textarea formControlName="rant"></textarea>
+  <input type="text" formControlName="troll">
+  <input type="submit" value="Post Rant" [disabled]=!trollForm.valid>
+</form>
+
 
 <router-outlet></router-outlet>

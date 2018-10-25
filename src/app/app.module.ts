@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { MoviesModule } from './modules/movies/movies.module';
 import { AppRoutingModule } from './app-routing.module';
@@ -21,7 +22,8 @@ import { MyMaterialModule } from './modules/my-material/my-material.module';
     BrowserModule,
     MoviesModule,
     AppRoutingModule,
-    MyMaterialModule
+    MyMaterialModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
